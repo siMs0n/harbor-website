@@ -6,22 +6,38 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
     <title>Djupviks hamn</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="index.html">Hem</a></li>
-        <li><a href="turist.html">Turistmål</a></li>
-        <li><a href="historia.html">Historia</a></li>
-        <li><a href="gasthamnen.html">Gästhamnen</a></li>
-        <li><a href="medlemsinfo.html">Medlemsinfo</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-      </ul>
-    </nav>
-    <header style="width: 100%;">
+    <header class="index-header">
+      <nav role="navigation">
+        <button
+          id="toggle"
+          aria-expanded="false"
+          aria-controls="menu"
+          aria-label="Menu"
+        >
+          <span id="nav-close-icon" aria-hidden="true">×</span>
+          <span id="nav-burger-icon" aria-hidden="true" class="is-active"
+            >☰</span
+          >
+        </button>
+        <ul id="menu">
+          <li><a href="index.html">Hem</a></li>
+          <li><a href="turist.html">Turistmål</a></li>
+          <li><a href="historia.html">Historia</a></li>
+          <li><a href="gasthamnen.html">Gästhamnen</a></li>
+          <li><a href="medlemsinfo.html">Medlemsinfo</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
       <picture>
         <source
           media="(max-width: 910px)"
@@ -41,21 +57,12 @@
         />
         <img src="/images/valkommen_1440.jpg" alt="Djupviks hamn" />
       </picture>
-      <h1>Välkommen till Djupvik</h1>
+      <h1 class="index-title">
+        Välkommen till <span class="extra-large-title">Djupvik</span>
+      </h1>
     </header>
     <main>
       <section>
-        <img
-          srcset="
-            /images/index/bodar_420.jpg   420w,
-            /images/index/bodar_960.jpg   960w,
-            /images/index/bodar_1440.jpg 1440w
-          "
-          sizes="(min-width: 1200px) 45vw,
-      100vw"
-          src="/images/index/bodar_960.jpg"
-          alt="Bodar i hamnen"
-        />
         <div>
           <p>
             Djupviks hamn ligger på Gotlands västkust nästan rakt öster om Lilla
@@ -81,6 +88,17 @@
             tillgänglighetsanpassad för rullstolar och rollatorer.
           </p>
         </div>
+        <img
+          srcset="
+            /images/index/bodar_420.jpg   420w,
+            /images/index/bodar_960.jpg   960w,
+            /images/index/bodar_1440.jpg 1440w
+          "
+          sizes="(min-width: 1200px) 45vw,
+      100vw"
+          src="/images/index/bodar_960.jpg"
+          alt="Bodar i hamnen"
+        />
       </section>
       <section>
         <h2>Senaste nytt</h2>
