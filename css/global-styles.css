@@ -31,6 +31,7 @@ h2 {
 h3 {
   margin: 0;
   font-weight: 500;
+  color: var(--primary-color);
 }
 
 a {
@@ -143,6 +144,10 @@ nav a {
   text-decoration: underline;
 }
 
+.smaller-h2 {
+  font-size: 1.3rem;
+}
+
 @media (min-width: 768px) {
   html {
     font-size: 20px;
@@ -189,6 +194,10 @@ nav a {
 
   footer {
     height: 9rem;
+  }
+
+  .smaller-h2 {
+    font-size: 2rem;
   }
 }
 
