@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/global-styles.css" />
+    <link rel="stylesheet" href="css/gasthamnen.css" />
+    <script src="js/script.js" defer></script>
+    <title>Gästhamnen | Djupvik</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button
+          id="toggle"
+          aria-expanded="false"
+          aria-controls="menu"
+          aria-label="Menu"
+        >
+          <span id="nav-close-icon" aria-hidden="true">×</span>
+          <span id="nav-burger-icon" aria-hidden="true" class="is-active"
+            >☰</span
+          >
+        </button>
+        <ul id="menu">
+          <li><a href="index.html">Hem</a></li>
+          <li><a href="turist.html">Turistmål</a></li>
+          <li><a href="historia.html">Historia</a></li>
+          <li>
+            <a href="gasthamnen.html" class="nav-current-page">Gästhamnen</a>
+          </li>
+          <li><a href="medlemsinfo.html">Medlemsinfo</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <picture>
+        <source
+          media="(max-width: 910px)"
+          srcset="
+            /images/index/valkommen_cropped_420.jpg   420w,
+            /images/index/valkommen_cropped_840.jpg   840w,
+            /images/index/valkommen_cropped_1280.jpg 1280w
+          "
+        />
+        <source
+          media="(min-width: 911px)"
+          srcset="
+            /images/index/valkommen_1024.jpg 1040w,
+            /images/index/valkommen_1440.jpg 1440w,
+            /images/index/valkommen_1920.jpg 1920w
+          "
+        />
+        <img src="/images/valkommen_1440.jpg" alt="Djupviks hamn" />
+      </picture>
+      <h1>
+        Gästhamnen
+      </h1>
+    </header>
+    <main class="harbor-layout">
+      <section>
+        <h2 class="h2-smaller">Gästbåtar är hjärtligt välkomna!</h2>
+        <p>
+          Vid normalvattendjup är djupet 3 meter i huvuddelen av hamnen. Vatten
+          och el finns utdraget på kajerna. I land kan vi erbjuda ett modernt
+          servicehus med WC, dusch och tvättmaskin.
+        </p>
+        <p>
+          Ring gärna hamnfogden för att få reda på aktuellt läge.<br />
+          <span class="medium-weight">Dygnshyra 150:- /dygn*</span> <br />
+          <span class="medium-weight">El-anslutning 50:-/dygn</span>
+        </p>
+        <p>
+          *inkluderat kort för tillträde till servicehuset och 20:- för två
+          duschar
+        </p>
+        <p>
+          Hamnfogde Bo Lautin<br />
+          Mobil 0707 - 92 03 10
+        </p>
+      </section>
+      <section class="weather-section">
+        <h2>Väder</h2>
+      </section>
+    </main>
+    <footer>
+      <p>
+        © djupvikshamn.se<br />
+        Kontakt: info@djupvikshamn.se
+      </p>
+    </footer>
+  </body>
+</html>

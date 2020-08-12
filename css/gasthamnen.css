@@ -1,0 +1,14 @@
+.medium-weight {
+  font-weight: 500;
+}
+
+@media (min-width: 1200px) {
+  .harbor-layout {
+    display: grid;
+    grid-template-columns: 2fr 4rem 1fr;
+  }
+
+  .weather-section {
+    grid-column: 3;
+  }
+}

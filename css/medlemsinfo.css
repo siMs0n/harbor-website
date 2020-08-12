@@ -1,0 +1,17 @@
+table {
+  width: 100%;
+  max-width: 35rem;
+  border-spacing: 0 1rem;
+}
+
+th {
+  font-weight: normal;
+  text-align: left;
+  vertical-align: top;
+}
+
+@media (max-width: 767px) {
+  td {
+    display: block;
+  }
+}
