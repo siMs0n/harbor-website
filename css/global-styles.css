@@ -148,6 +148,15 @@ nav a {
     font-size: 20px;
   }
 
+  header {
+    height: 28rem;
+  }
+
+  header h1 {
+    top: 9rem;
+    font-size: 3rem;
+  }
+
   nav {
     box-shadow: 0 7px 10px rgba(0, 0, 0, 0.25);
   }
@@ -201,7 +210,16 @@ main img {
     font-size: 24px;
   }
 
+  main {
+    margin: 0 4rem;
+  }
+
+  main img {
+    margin: 0;
+  }
+
   header h1 {
     width: 30rem;
+    font-size: 4rem;
   }
 }

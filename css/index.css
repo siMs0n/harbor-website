@@ -1,3 +1,7 @@
+.index-main {
+  margin: 0 1rem;
+}
+
 .index-header {
   height: 100vh;
 }
@@ -39,7 +43,8 @@
 }
 
 .news-article figure {
-  margin: 0 auto;
+  margin: 2rem auto 0;
+  width: 80%;
   max-width: 500px;
 }
 
