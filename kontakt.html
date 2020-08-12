@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/global-styles.css" />
+    <link rel="stylesheet" href="css/kontakt.css" />
+    <script src="js/script.js" defer></script>
+    <title>Kontakt | Djupvik</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button
+          id="toggle"
+          aria-expanded="false"
+          aria-controls="menu"
+          aria-label="Menu"
+        >
+          <span id="nav-close-icon" aria-hidden="true">×</span>
+          <span id="nav-burger-icon" aria-hidden="true" class="is-active"
+            >☰</span
+          >
+        </button>
+        <ul id="menu">
+          <li><a href="index.html">Hem</a></li>
+          <li><a href="turist.html">Turistmål</a></li>
+          <li><a href="historia.html">Historia</a></li>
+          <li>
+            <a href="gasthamnen.html">Gästhamnen</a>
+          </li>
+          <li><a href="medlemsinfo.html">Medlemsinfo</a></li>
+          <li><a href="kontakt.html" class="nav-current-page">Kontakt</a></li>
+        </ul>
+      </nav>
+      <picture>
+        <source
+          media="(max-width: 910px)"
+          srcset="
+            /images/index/valkommen_cropped_420.jpg   420w,
+            /images/index/valkommen_cropped_840.jpg   840w,
+            /images/index/valkommen_cropped_1280.jpg 1280w
+          "
+        />
+        <source
+          media="(min-width: 911px)"
+          srcset="
+            /images/index/valkommen_1024.jpg 1040w,
+            /images/index/valkommen_1440.jpg 1440w,
+            /images/index/valkommen_1920.jpg 1920w
+          "
+        />
+        <img src="/images/valkommen_1440.jpg" alt="Djupviks hamn" />
+      </picture>
+      <h1>
+        Kontakt
+      </h1>
+    </header>
+    <main>
+      <h2>Kontaktuppgifter</h2>
+      <p>
+        Hamnfogde Bo Lautin<br />
+        Mobil 0707-920310
+      </p>
+      <p>
+        Djupviks hamnförening<br />
+        c/o Ekholm<br />
+        Eksta Hägur 170<br />
+        623 54 Klintehamn
+      </p>
+      <section>
+        <h2>Kontaktformulär</h2>
+        <form action="/skicka" method="post">
+          <div>
+            <label for="subject">Rubrik</label>
+            <input type="text" name="Rubrik" id="subject" required />
+          </div>
+          <div>
+            <label for="description">Beskrivning av ärendet</label>
+            <textarea
+              name="Beskrivning"
+              id="description"
+              required
+              rows="4"
+            ></textarea>
+          </div>
+          <div>
+            <label for="category">Vad gäller det?</label>
+            <select name="Kategori" id="category" required>
+              <option value="">--Välj--</option>
+              <option value="Båtplats">Båtplats</option>
+              <option value="Medlem">Medlem</option>
+              <option value="Övrigt">Övrigt</option>
+            </select>
+          </div>
+          <div>
+            <label for="contactOption">Hur vill du bli kontaktad?</label>
+            <select
+              name="Kontaktsätt"
+              id="contactOption"
+              required
+              onchange="onSelectContactOption()"
+            >
+              <option value="">--Välj--</option>
+              <option value="Mail">Mail</option>
+              <option value="Telefon">Telefon</option>
+              <option value="Inte alls">Inte alls</option>
+            </select>
+          </div>
+          <div id="formEmail" class="hidden">
+            <label for="email">Mailadress</label>
+            <input type="email" name="Mailadress" id="email" />
+          </div>
+          <div id="formPhone" class="hidden">
+            <label for="phoneNumber">Telefonnummer</label>
+            <input type="tel" name="Telefonnummer" id="phoneNumber" />
+          </div>
+          <div>
+            <input type="submit" value="Skicka" />
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        © djupvikshamn.se<br />
+        Kontakt: info@djupvikshamn.se
+      </p>
+    </footer>
+  </body>
+</html>

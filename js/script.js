@@ -21,3 +21,29 @@ toggle.addEventListener("click", function () {
     navBurgerIcon.classList.remove("is-active");
   }
 });
+
+// Form logic
+function onSelectContactOption(event) {
+  const option = document.querySelector("#contactOption").value;
+
+  const emailElement = document.querySelector("#formEmail");
+  const phoneElement = document.querySelector("#formPhone");
+
+  if (!emailElement.classList.contains("hidden")) {
+    emailElement.classList.add("hidden");
+    emailElement.setAttribute("required", false);
+  }
+
+  if (!phoneElement.classList.contains("hidden")) {
+    phoneElement.classList.add("hidden");
+    phoneElement.setAttribute("required", false);
+  }
+
+  if (option === "Mail") {
+    emailElement.classList.remove("hidden");
+    emailElement.setAttribute("required", true);
+  } else if (option === "Telefon") {
+    phoneElement.classList.remove("hidden");
+    phoneElement.setAttribute("required", true);
+  }
+}
