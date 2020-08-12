@@ -11,7 +11,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/global-styles.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <script src="js/script.js" defer></script>
     <title>Djupviks hamn</title>
   </head>
@@ -30,7 +31,7 @@
           >
         </button>
         <ul id="menu">
-          <li><a href="index.html">Hem</a></li>
+          <li><a href="index.html" class="nav-current-page">Hem</a></li>
           <li><a href="turist.html">Turistmål</a></li>
           <li><a href="historia.html">Historia</a></li>
           <li><a href="gasthamnen.html">Gästhamnen</a></li>
@@ -62,15 +63,18 @@
       </h1>
     </header>
     <main>
-      <section>
+      <section class="index-intro-section">
         <div>
           <p>
-            Djupviks hamn ligger på Gotlands västkust nästan rakt öster om Lilla
-            Karlsö. Hamnen är otroligt vackert belägen i anslutning till ett
-            gammalt Gotländskt fiskeläge bestående av fiskebodar från sent
-            1800-tal. Husen är grupperade i tre rader, mellan dem ligger
-            gistgarden där man torkar nät och närmast stranden ligger båthusen.
-            Från fiskeläget har man fri utsikt mot de båda Karlsöarna.
+            <span class="fat-blue-text"
+              >Djupviks hamn ligger på Gotlands västkust</span
+            >
+            nästan rakt öster om Lilla Karlsö. Hamnen är otroligt vackert
+            belägen i anslutning till ett gammalt Gotländskt fiskeläge bestående
+            av fiskebodar från sent 1800-tal. Husen är grupperade i tre rader,
+            mellan dem ligger gistgarden där man torkar nät och närmast stranden
+            ligger båthusen. Från fiskeläget har man fri utsikt mot de båda
+            Karlsöarna.
           </p>
           <p>
             Ansvaret för hamnen och fiskeläget har Djupviks hamnförening, som är
@@ -100,11 +104,11 @@
           alt="Bodar i hamnen"
         />
       </section>
-      <section>
+      <section class="news-section">
         <h2>Senaste nytt</h2>
-        <article>
+        <article class="news-article">
           <h3>Hamnjobb</h3>
-          <p>2019-04-06</p>
+          <p class="news-date">2019-04-06</p>
           <p>
             Lördagen den 6 april samlades ett antal av föreningens medlemmar för
             arbete i hamnen. Kiosken, kajerna och stranden städades. Kajer
@@ -114,9 +118,9 @@
             med varor.
           </p>
         </article>
-        <article>
-          <h3>Hamnjobb</h3>
-          <p>2019-04-06</p>
+        <article class="news-article">
+          <h3>Succé för hamnens dag!</h3>
+          <p class="news-date">2019-04-06</p>
           <p>
             Lördagen den 16 juli arrangerade föreningen Djupviks hamn i Eksta
             ”Hamnens dag” i Djupvik. Vårt arbete har med åren alltmer också
@@ -138,7 +142,7 @@
           </p>
           <figure>
             <img
-              src="/images/HamnensDag.jpg"
+              src="/images/index/HamnensDag.jpg"
               alt="Deltagare under hamnens dag"
             />
             <figcaption>Foto: Björn Hjernquist</figcaption>
