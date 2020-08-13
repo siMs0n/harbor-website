@@ -9,6 +9,7 @@
 .index-title {
   top: 30%;
   font-size: 1.3rem;
+  width: 19rem;
 }
 
 .extra-large-title {
@@ -51,6 +52,7 @@
 @media (min-width: 1200px) {
   .index-title {
     font-size: 2rem;
+    width: 29rem;
   }
 
   .extra-large-title {

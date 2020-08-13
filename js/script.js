@@ -10,7 +10,8 @@ toggle.addEventListener("click", function () {
   if (menu.classList.contains("is-active")) {
     //Menu is open and should close
     this.setAttribute("aria-expanded", "false");
-    menu.classList.remove("is-active");
+    menu.classList.remove("animate-open");
+    setTimeout(() => menu.classList.remove("is-active"), 600);
     navCloseIcon.classList.remove("is-active");
     navBurgerIcon.classList.add("is-active");
   } else {
@@ -19,6 +20,7 @@ toggle.addEventListener("click", function () {
     this.setAttribute("aria-expanded", "true");
     navCloseIcon.classList.add("is-active");
     navBurgerIcon.classList.remove("is-active");
+    setTimeout(() => menu.classList.add("animate-open"));
   }
 });
 
