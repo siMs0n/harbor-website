@@ -49,3 +49,25 @@ function onSelectContactOption(event) {
     phoneElement.setAttribute("required", true);
   }
 }
+
+//Scroll down button
+const scrollDownButton = document.querySelector("#scroll-down-button");
+if (scrollDownButton) {
+  scrollDownButton.addEventListener("click", function () {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: "smooth",
+    });
+  });
+}
+
+//Scroll up button
+const scrollUpButton = document.querySelector("#scroll-up-button");
+if (scrollUpButton) {
+  scrollUpButton.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+}

@@ -88,3 +88,18 @@
     margin-left: 1rem;
   }
 }
+
+#scroll-down-button {
+  width: 2.65rem;
+  height: 2.65rem;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg width='24' height='24' viewBox='3 6 18 10' fill='none' xmlns='http://www.w3.org/2000/svg'%0A%3E%3Cpath d='M6.34317 7.75732L4.92896 9.17154L12 16.2426L19.0711 9.17157L17.6569 7.75735L12 13.4142L6.34317 7.75732Z' fill='%23017DC2' /%3E%3C/svg%3E"),
+    linear-gradient(to bottom, #f0f0f0 0%, #f0f0f0 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: center, 0 0;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  bottom: 1rem;
+  right: calc(50% - 1.325rem);
+}

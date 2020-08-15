@@ -228,6 +228,34 @@ main img {
   color: var(--primary-color);
 }
 
+#scroll-up-button {
+  width: 48px;
+  height: 48px;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg width='18' height='27' viewBox='7.5 2 10 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.6568 8.96219L16.2393 10.3731L12.9843 7.10285L12.9706 20.7079L10.9706 20.7059L10.9843 7.13806L7.75404 10.3532L6.34314 8.93572L12.0132 3.29211L17.6568 8.96219Z' fill='%23017DC2' /%3E%3C/svg%3E"),
+    linear-gradient(to bottom, #f0f0f0 0%, #f0f0f0 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: center, 0 0;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  animation: fadein 8s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media (min-width: 1200px) {
   html {
     font-size: 24px;
@@ -244,5 +272,9 @@ main img {
   header h1 {
     font-size: 4rem;
     top: 8rem;
+  }
+
+  #scroll-up-button {
+    display: none;
   }
 }
