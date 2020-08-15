@@ -1,0 +1,32 @@
+#smhi-widget {
+  margin: 0 -0.5rem;
+}
+
+#smhi-widget table {
+  width: 100%;
+  max-width: 35rem;
+  border-spacing: 0 0.5rem;
+}
+
+#smhi-widget th {
+  font-weight: normal;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid #222222;
+}
+
+#smhi-widget th:first-child {
+  padding-right: 0.5rem;
+}
+
+#smhi-widget td:first-child {
+  padding-right: 0.5rem;
+}
+
+#smhi-widget td:nth-child(2) {
+  padding-left: 0.5rem;
+}
+
+#smhi-widget td:nth-child(3) {
+  padding-left: 0.5rem;
+}
