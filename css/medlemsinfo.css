@@ -15,3 +15,7 @@ th {
     display: block;
   }
 }
+
+table a {
+  color: #0177b7;
+}

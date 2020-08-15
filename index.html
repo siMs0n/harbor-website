@@ -47,6 +47,7 @@
             /images/index/valkommen_cropped_840.jpg   840w,
             /images/index/valkommen_cropped_1280.jpg 1280w
           "
+          sizes="100vw"
         />
         <source
           media="(min-width: 911px)"
@@ -55,6 +56,7 @@
             /images/index/valkommen_1440.jpg 1440w,
             /images/index/valkommen_1920.jpg 1920w
           "
+          sizes="100vw"
         />
         <img src="/images/valkommen_1440.jpg" alt="Djupviks hamn" />
       </picture>
@@ -63,7 +65,7 @@
       </h1>
     </header>
     <main class="index-main">
-      <section class="index-intro-section">
+      <div class="index-intro-section">
         <div>
           <p>
             <span class="fat-blue-text"
@@ -103,8 +105,8 @@
           src="/images/index/bodar_960.jpg"
           alt="Bodar i hamnen"
         />
-        <button id="scroll-down-button"></button>
-      </section>
+        <button id="scroll-down-button" aria-label="Scroll down"></button>
+      </div>
       <section class="news-section">
         <h2>Senaste nytt</h2>
         <article class="news-article">
